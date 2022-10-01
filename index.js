@@ -1,5 +1,6 @@
 module.exports = {
-  ...require('./lib/auth'),
+  ...require('./lib/secure_attempt'),
+  ...require('./lib/secure_code'),
   ...require('./lib/list'),
   ...require('./lib/logger'),
   ...require('./lib/misc'),
