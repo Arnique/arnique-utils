@@ -14,3 +14,5 @@ export function timeStamp(): {
     timeString: string;
 };
 export function cleanArgs(args: any): any;
+export function cascadeArr(arr?: any[]): any[];
+export function cascadeObj(obj?: {}): {};
