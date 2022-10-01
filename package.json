@@ -1,0 +1,29 @@
+{
+  "name": "arnique-utils",
+  "version": "1.0.6",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "types": "./types/index.d.ts",
+  "scripts": {
+    "test": "jest ./tests",
+    "types": "tsc index.js --declaration --allowJs --emitDeclarationOnly --outDir types"
+  },
+  "keywords": [],
+  "author": "https://github.com/Arnique",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.3.1",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "chalk": "^4.1.2",
+    "lodash": "^4.17.21",
+    "nanoid": "^3.2.0",
+    "parse-duration": "^1.0.2",
+    "simple-node-logger": "^21.8.12",
+    "uuid": "^8.3.2",
+    "validate": "^5.1.0"
+  }
+}
