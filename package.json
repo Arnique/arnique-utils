@@ -2,7 +2,6 @@
   "name": "arnique-utils",
   "version": "1.0.0",
   "description": "",
-  "private": true,
   "main": "index.js",
   "types": "./types/index.d.ts",
   "scripts": {
