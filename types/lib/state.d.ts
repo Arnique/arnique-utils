@@ -1,4 +1,4 @@
-export class JsonState extends EventEmitter {
+export class JsonState {
     constructor({ data, userOpts, stateFile, onLog, onChange, onError, onInit, }?: {
         data?: {};
         userOpts?: {};
@@ -24,4 +24,3 @@ export class JsonState extends EventEmitter {
         data: {};
     };
 }
-import EventEmitter = require("events");
