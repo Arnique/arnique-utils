@@ -1,4 +1,4 @@
-const { hideSecret, cascadeArr, cascadeObj, awaiter, sleep } = require('../lib/misc');
+const { hideSecret, cascadeArr, cascadeObj, awaiter, waitUntil } = require('../lib/misc');
 
 function asyncTest(pass = true) {
   return pass ? Promise.resolve('OK') : Promise.reject('ERR')
@@ -27,5 +27,21 @@ describe('Miscelleneous utils', () => {
     const r2 = await awaiter(asyncTest(false));
     expect(r2.error).toEqual('ERR');
     expect(r2.data).toEqual(null);
+  })
+
+  test('waitUntil', async () => {
+    // Should resolves true within time limit
+    let v1 = false;
+    setTimeout(()=> v1 = true, 500);
+
+    const r1 = await waitUntil(() => v1 === true, 100, 500);
+    expect(r1).toEqual(true);
+
+    // Should fail as it's outside time limit
+    let v2 = false;
+    setTimeout(()=> v2 = true, 600);
+
+    const r2 = await waitUntil(() => v2 === true, 100, 500);
+    expect(r2).toEqual(false);
   })
 });
