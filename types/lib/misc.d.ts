@@ -16,5 +16,5 @@ export function timeStamp(): {
 export function cleanArgs(args: any): any;
 export function cascadeArr(arr?: any[]): any[];
 export function cascadeObj(obj?: {}): {};
-export function awaiter(asyncFunc: any): Promise<any>;
+export function awaiter(promise: any): Promise<any>;
 export function waitUntil(conditionFunc: any, intervalMs?: number, maxMs?: number): Promise<any>;
