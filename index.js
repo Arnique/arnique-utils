@@ -7,4 +7,5 @@ module.exports = {
   ...require('./lib/types'),
   ...require('./lib/state'),
   ...require('./lib/validation'),
+  ...require('./lib/form'),
 }
