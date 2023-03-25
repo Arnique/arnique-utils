@@ -18,3 +18,7 @@ export function cascadeArr(arr?: any[]): any[];
 export function cascadeObj(obj?: {}): {};
 export function awaiter(promise: any): Promise<any>;
 export function waitUntil(conditionFunc: any, intervalMs?: number, maxMs?: number): Promise<any>;
+export function pick(obj: any, keys?: any[]): {};
+export function pluck(obj: any, keys?: any[]): {
+    [k: string]: any;
+};

@@ -27,6 +27,8 @@ declare const _exports: {
     cascadeObj: typeof import("./lib/misc").cascadeObj;
     awaiter: typeof import("./lib/misc").awaiter;
     waitUntil: typeof import("./lib/misc").waitUntil;
+    pick: typeof import("./lib/misc").pick;
+    pluck: typeof import("./lib/misc").pluck;
     FileLogger: typeof import("./lib/logger").FileLogger;
     MaxList: typeof import("./lib/list").MaxList;
     SecureCode: typeof import("./lib/secure_code").SecureCode;
