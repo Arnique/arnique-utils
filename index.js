@@ -8,4 +8,5 @@ module.exports = {
   ...require('./lib/state'),
   ...require('./lib/validation'),
   ...require('./lib/form'),
+  ...require('./lib/api'),
 }
