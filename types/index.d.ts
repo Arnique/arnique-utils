@@ -1,4 +1,5 @@
 declare const _exports: {
+    getError(error: any): import("./lib/api").IErrorObj;
     ReqHelper: typeof import("./lib/form").ReqHelper;
     illegalKeys: typeof import("./lib/validation").illegalKeys;
     hasIllegalKeys: typeof import("./lib/validation").hasIllegalKeys;
